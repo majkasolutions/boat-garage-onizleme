@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Boat Garage — Kapalı Tekne Garajı · Çeşme</title>
+<meta name="description" content="Boat Garage: Çeşme–Alaçatı'da kapalı tekne garajı. Kışlama, bakım, onarım, vinç ve taşıma. Reis Yatçılık kuruluşudur.">
+<meta property="og:title" content="Boat Garage — Kapalı Tekne Garajı · Çeşme">
+<meta property="og:image" content="https://boat-garage.com/img/bg-yard.jpg"><meta property="og:type" content="website"><meta property="og:url" content="https://boat-garage.com/garage/"><meta property="og:locale" content="tr_TR"><meta property="og:description" content="Çeşme–Alaçatı kapalı tekne garajı: kışlama, bakım, onarım, vinç ve taşıma."><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://boat-garage.com/garage/">
+<link rel="alternate" hreflang="tr" href="https://boat-garage.com/garage/">
+<link rel="alternate" hreflang="en" href="https://boat-garage.com/en/garage/">
+<link rel="icon" type="image/png" href="../img/logo-garage.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--bg2:#eef6fc;--fg:#0f2540;--mute:#5f7086;--acc:#4fb3ff;--acc2:#1f3a5f;--acc-soft:#dff0ff;--line:rgba(15,37,64,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--fg);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:none}
+h1,h2,h3,.disp{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.01em;line-height:.9}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1320px,92vw);margin:0 auto}
+.cur{position:fixed;z-index:999;width:12px;height:12px;border-radius:50%;background:var(--acc);pointer-events:none;transform:translate(-50%,-50%)}
+.cur2{position:fixed;z-index:999;width:44px;height:44px;border-radius:50%;border:1px solid var(--acc);pointer-events:none;transform:translate(-50%,-50%);transition:width .3s,height .3s}
+nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 4vw;border-bottom:1px solid var(--line);backdrop-filter:blur(12px);background:rgba(255,255,255,.75)}
+nav .logo{display:flex;align-items:center;gap:14px;font-family:"Bebas Neue";font-size:26px;letter-spacing:.08em;color:var(--acc2)}
+nav .logo img{height:52px;width:auto}
+nav .logo small{display:block;font-family:Manrope;font-size:9px;letter-spacing:.3em;color:var(--mute);font-weight:500}
+nav ul{display:flex;gap:30px;list-style:none;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+nav ul a:hover{color:var(--fg)}
+nav ul a.sw{color:var(--acc2);border:1px solid var(--line);padding:8px 14px;border-radius:999px}
+.btn{font-family:"Bebas Neue";font-size:20px;letter-spacing:.08em;background:var(--acc);color:#fff;padding:12px 26px;display:inline-flex;align-items:center;gap:12px;position:relative;overflow:hidden;border-radius:4px}
+.btn span{position:relative;z-index:2}
+.btn:before{content:"";position:absolute;inset:0;background:var(--acc2);transform:translateX(-101%);transition:transform .45s cubic-bezier(.7,0,.2,1)}
+.btn:hover:before{transform:translateX(0)}
+/* hero */
+.hero{position:relative;height:100vh;min-height:700px;overflow:hidden;display:grid;place-items:center;background:var(--bg2)}
+.hero .bg{position:absolute;inset:-6%;background:url(../img/hangar-empty.jpg) center/cover;filter:brightness(.95) saturate(.9);will-change:transform;opacity:.9}
+.hero .grain{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.65),rgba(255,255,255,.15) 40%,rgba(255,255,255,.92) 100%)}
+.hero .title{position:relative;z-index:2;text-align:center}
+.hero .badge{width:clamp(120px,14vw,190px);margin:0 auto 10px;display:block;filter:drop-shadow(0 20px 40px rgba(15,37,64,.25))}
+.hero h1{font-size:clamp(70px,14vw,220px);line-height:.85;background:url(../img/bg-wash.jpg) center/cover;-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.hero h1 .row{display:block;overflow:hidden}
+.hero .sub{display:flex;justify-content:space-between;align-items:center;margin-top:20px;font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--mute);width:min(1100px,90vw)}
+.hero .sub b{color:var(--acc2);font-weight:700}
+.hero .fl{position:absolute;z-index:3;will-change:transform;border:6px solid #fff;box-shadow:0 30px 60px rgba(15,37,64,.25)}
+.hero .fl.a{left:6vw;bottom:14vh;width:220px;aspect-ratio:3/4;background:url(../img/reis-sehpa.jpg) center/cover}
+.hero .fl.b{right:7vw;top:16vh;width:260px;aspect-ratio:4/3;background:url(../img/reis-vinc.jpg) center/cover}
+.hero .fl .cap{position:absolute;left:0;bottom:-30px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
+/* ticker */
+.ticker{overflow:hidden;white-space:nowrap;padding:16px 0;background:var(--acc);color:#fff}
+.ticker span{font-family:"Bebas Neue";font-size:34px;letter-spacing:.06em;padding-right:50px;display:inline-block}
+/* manifesto */
+.man{padding:140px 0}
+.man p{font-size:clamp(28px,4vw,58px);line-height:1.15;font-weight:300;max-width:26ch}
+.man p .w{color:#b8c6d6;transition:color .3s}
+.man .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:80px;border-top:1px solid var(--line);padding-top:30px}
+.man .meta b{font-family:"Bebas Neue";font-size:74px;display:block;color:var(--acc2)}
+.man .meta b i{color:var(--acc);font-style:normal}
+.man .meta span{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+/* pressure wash */
+.wash{position:relative;height:100vh;overflow:hidden;background:#0f2540}
+.wash .layer{position:absolute;inset:0;background-size:cover;background-position:center}
+.wash .dirty{background-image:url(../img/bg-wash-dirty.jpg)}
+.wash .fresh{background-image:url(../img/bg-wash.jpg);clip-path:inset(0 100% 0 0)}
+.wash .beam{position:absolute;top:-10%;bottom:-10%;left:0;width:140px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.35) 50%,rgba(255,255,255,.95) 52%,transparent 54%);filter:blur(1px)}
+.wash canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.wash .ui{position:absolute;left:5vw;bottom:6vh;z-index:3;color:#fff}
+.wash .ui h2{font-size:clamp(70px,11vw,170px);text-shadow:0 10px 50px rgba(0,0,0,.5)}
+.wash .ui h2 i{color:var(--acc);font-style:normal}
+.wash .ui p{max-width:44ch;color:#e6f0fa;line-height:1.6;margin-top:10px}
+.wash .gauge{position:absolute;right:5vw;bottom:6vh;z-index:3;text-align:right}
+.wash .gauge b{font-family:"Bebas Neue";font-size:clamp(70px,10vw,150px);color:var(--acc);line-height:1}
+.wash .gauge span{display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#cfe3f5}
+/* services list */
+.svc{padding:120px 0;background:var(--bg2)}
+.svc h2{font-size:clamp(60px,9vw,140px);margin-bottom:40px;color:var(--acc2)}
+.svc h2 i{color:var(--acc);font-style:normal}
+.row{display:grid;grid-template-columns:80px 1.2fr 2fr 120px;gap:30px;align-items:center;padding:34px 0;border-top:1px solid var(--line);position:relative;transition:.4s}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row .n{font-family:"Bebas Neue";font-size:28px;color:var(--acc)}
+.row h3{font-size:clamp(34px,4vw,60px);color:var(--acc2)}
+.row p{color:var(--mute);line-height:1.6;font-size:15px;max-width:48ch}
+.row .arr{font-family:"Bebas Neue";font-size:30px;text-align:right;transition:transform .4s;color:var(--acc2)}
+.row:hover{padding-left:20px}.row:hover .arr{transform:translateX(10px);color:var(--acc)}
+.row .pv{position:fixed;width:300px;aspect-ratio:4/3;background:var(--img) center/cover;pointer-events:none;opacity:0;z-index:40;transform:translate(-50%,-50%) rotate(-4deg);border:6px solid #fff;box-shadow:0 30px 60px rgba(15,37,64,.3)}
+/* storage sequence pinned */
+.seq{position:relative;height:100vh;overflow:hidden;background:#0f2540}
+.seq .imgs{position:absolute;inset:0}
+.seq .imgs div{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.12);filter:brightness(.6)}
+.seq .imgs div:first-child{opacity:1}
+.seq .txt{position:absolute;inset:0;display:grid;place-items:center;text-align:center;z-index:2;color:#fff}
+.seq .t{position:absolute;opacity:0}
+.seq .t h2{font-size:clamp(70px,12vw,190px)}
+.seq .t p{color:#dbe8f5;letter-spacing:.25em;text-transform:uppercase;font-size:12px;margin-top:14px}
+.seq .prog{position:absolute;left:5vw;right:5vw;bottom:5vh;height:2px;background:rgba(255,255,255,.2);z-index:3}
+.seq .prog i{display:block;height:100%;width:0;background:var(--acc)}
+.seq .steps{position:absolute;left:5vw;right:5vw;bottom:calc(5vh + 14px);display:flex;justify-content:space-between;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#9fb8d0;z-index:3}
+/* gallery stripe */
+.gal{display:flex;gap:14px;padding:100px 0;width:max-content}
+.gal figure{width:34vw;min-width:320px;aspect-ratio:4/3;overflow:hidden;position:relative;flex:none;border-radius:6px}
+.gal figure img{width:100%;height:100%;object-fit:cover;filter:saturate(.7);transition:filter .6s,transform 1.2s}
+.gal figure:hover img{filter:saturate(1);transform:scale(1.05)}
+.gal figcaption{position:absolute;left:16px;bottom:14px;font-family:"Bebas Neue";font-size:26px;letter-spacing:.06em;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+
+  /* galeri elle kaydırılabilir */
+  #galeri { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  #galeri::-webkit-scrollbar { display: none; }
+  .gal { width: max-content; }
+  .gal figure img { user-select: none; -webkit-user-drag: none; }
+/* cta */
+.cta{padding:140px 0;text-align:center;position:relative;overflow:hidden;background:var(--bg2)}
+.cta h2{font-size:clamp(80px,15vw,240px);line-height:.85;color:var(--acc2)}
+.cta h2 i{color:var(--acc);font-style:normal}
+.cta p{color:var(--mute);max-width:50ch;margin:26px auto 40px;line-height:1.7;font-size:17px}
+.cta .contact{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:40px;font-size:14px;color:var(--fg)}
+.cta .contact a{border-bottom:1px solid var(--acc)}
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+footer .sw{color:var(--acc2)}
+.up{opacity:0;transform:translateY(50px)}
+@media(max-width:900px){body{cursor:auto}.cur,.cur2{display:none}nav ul{display:none}.hero .fl{display:none}.man .meta{grid-template-columns:1fr 1fr}.row{grid-template-columns:50px 1fr;gap:12px}.row p,.row .arr{grid-column:2}.wash .gauge{display:none}nav .logo img{height:40px}}
+@media(max-width:900px){.hero{min-height:640px}.hero h1{font-size:clamp(64px,22vw,110px);background:none;-webkit-text-fill-color:var(--acc2);color:var(--acc2)}.hero .sub{flex-direction:column;gap:8px;text-align:center;margin-top:14px}.hero .badge{width:110px}}
+</style>
+<script src="../assets/analytics.js" defer></script>
+</head>
+<body>
+<div class="cur"></div><div class="cur2"></div>
+<nav><a class="logo" href="./"><img src="../img/logo-garage.png" alt="Boat Garage"><span>Boat Garage<small>Reis Yatçılık kuruluşudur</small></span></a><ul><li><a href="hizmetler.html">Hizmetler</a></li><li><a href="tesis.html">Tesis &amp; Güvenlik</a></li><li><a href="teklif.html">Kışlama Teklifi</a></li><li><a href="iletisim.html">İletişim</a></li><li><a class="sw" href="../clean/">Boat Clean →</a></li><li><a class="sw" href="../en/garage/" hreflang="en">EN</a></li></ul><a class="btn" href="teklif.html"><span>Teklif al</span></a></nav>
+
+<header class="hero">
+  <div class="bg"></div><div class="grain"></div>
+  <div class="fl a" data-depth="30"><div class="cap">Bakım · Onarım</div></div>
+  <div class="fl b" data-depth="-45"><div class="cap">Kışlama · Çeşme</div></div>
+  <div class="title">
+    <img class="badge" src="../img/logo-garage.png" alt="" data-in-badge>
+    <h1><span class="row"><span class="disp" data-in>Boat</span></span><span class="row"><span class="disp" data-in>Garage</span></span></h1>
+    <div class="sub"><span>Kapalı kışlama</span><span><b>Reis Yatçılık</b> kuruluşudur</span><span>Çeşme · Alaçatı</span></div>
+  </div>
+</header>
+
+<div class="ticker"><div class="in"><span>Kapalı kışlama —</span><span>Bakım &amp; onarım —</span><span>Basınçlı yıkama —</span><span>Polisaj —</span><span>Antifouling —</span><span>Vinç &amp; taşıma —</span><span>Kapalı kışlama —</span><span>Bakım &amp; onarım —</span><span>Basınçlı yıkama —</span><span>Polisaj —</span><span>Antifouling —</span><span>Vinç &amp; taşıma —</span></div></div>
+
+<section class="man">
+  <div class="wrap">
+    <p data-words>Tuz, güneş ve nem tekneye en çok kışın zarar verir. Biz o ayları kapalı bir garajda, kontrollü ortamda, bakım takvimi işleyerek geçirtiyoruz. İlkbaharda tekneniz ilk günkü gibi denize iner.</p>
+    <div class="meta">
+      <div class="up"><b><i data-count="3200">0</i></b><span>m² kapalı alan</span></div>
+      <div class="up"><b><i data-count="120">0</i></b><span>tekne kapasitesi</span></div>
+      <div class="up"><b><i>7</i>/24</b><span>kamera &amp; güvenlik</span></div>
+      <div class="up"><b><i data-count="20">0</i>+</b><span>yıl deniz tecrübesi</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="wash" id="temizlik">
+  <div class="layer dirty"></div><div class="layer fresh"></div><div class="beam"></div><canvas id="drops"></canvas>
+  <div class="ui"><h2>Garajdan <i>pırıl pırıl</i></h2><p>Aşağı kaydırın; kışlama sonunda tekneniz basınçlı yıkama ve polisajla teslim edilir. Tuz ve yosun izi kalmaz.</p></div>
+  <div class="gauge"><b id="pct">0</b><span>Temizlik %</span></div>
+</section>
+
+<section class="svc" id="hizmetler">
+  <div class="wrap">
+    <h2 class="up">Ne <i>yapıyoruz?</i></h2>
+    <div class="row" style="--img:url(../img/hangar-empty.jpg)"><div class="n">01</div><h3>Kapalı kışlama</h3><p>İklim kontrollü, kameralı kapalı garajda güvenli kış konaklaması. Kendi yeri, kendi bakım kartı.</p><div class="arr">→</div><div class="pv"></div></div>
+    <div class="row" style="--img:url(../img/drydock-worker.jpg)"><div class="n">02</div><h3>Bakım &amp; onarım</h3><p>Motor kışlama, elektrik, fiber ve jelkot onarımı; yetkili servis standartlarında.</p><div class="arr">→</div><div class="pv"></div></div>
+    <div class="row" style="--img:url(../img/hull-work-stands.jpg)"><div class="n">03</div><h3>Karina &amp; antifouling</h3><p>Karina raspası, zehirli boya, anot değişimi. Sezona hazır alt yapı.</p><div class="arr">→</div><div class="pv"></div></div>
+    <div class="row" style="--img:url(../img/reis-vinc.jpg)"><div class="n">04</div><h3>Vinç &amp; taşıma</h3><p>Marinadan garaja, garajdan denize. Kaldırma, taşıma, suya indirme.</p><div class="arr">→</div><div class="pv"></div></div>
+    <div class="row" style="--img:url(../img/superyacht-bow.jpg)"><div class="n">05</div><h3>Temizlik &amp; polisaj</h3><p>Boat Clean ekibimizle basınçlı yıkama, jelkot polisaj, teak ve iç detay temizliği. <a href="../clean/" style="color:var(--acc);font-weight:600">Boat Clean →</a></p><div class="arr">→</div><div class="pv"></div></div>
+  </div>
+</section>
+
+<section class="seq" id="kislama">
+  <div class="imgs">
+    <div style="background-image:url(../img/yacht-wake.jpg)"></div>
+    <div style="background-image:url(../img/reis-vinc.jpg)"></div>
+    <div style="background-image:url(../img/bg-bakim.jpg)"></div>
+    <div style="background-image:url(../img/hangar-empty.jpg)"></div>
+    <div style="background-image:url(../img/yacht-sunset-dock.jpg)"></div>
+  </div>
+  <div class="txt">
+    <div class="t"><h2>Denizden</h2><p>01 · Teslim alıyoruz</p></div>
+    <div class="t"><h2>Karaya</h2><p>02 · Travel lift ile kaldırıyoruz</p></div>
+    <div class="t"><h2>Bakıma</h2><p>03 · Motor kışlama &amp; onarım</p></div>
+    <div class="t"><h2>Garaja</h2><p>04 · Kapalı, kameralı, nem kontrollü</p></div>
+    <div class="t"><h2>Denize</h2><p>05 · İlkbaharda polisajlı teslim</p></div>
+  </div>
+  <div class="steps"><span>Deniz</span><span>Kara</span><span>Bakım</span><span>Garaj</span><span>Deniz</span></div>
+  <div class="prog"><i id="prog"></i></div>
+</section>
+
+<section id="galeri">
+  <div class="gal">
+    <figure><img src="../img/bg-rack.jpg" alt=""><figcaption>Raflı depolama</figcaption></figure>
+      <figure><img src="../img/superyacht-bow.jpg" alt=""><figcaption>Polisaj sonrası</figcaption></figure>
+      <figure><img src="../img/bg-usta.jpg" alt=""><figcaption>Atölye</figcaption></figure>
+      <figure><img src="../img/reis-vinc.jpg" alt=""><figcaption>Travel lift</figcaption></figure>
+      <figure><img src="../img/bg-aerial.jpg" alt=""><figcaption>Saha</figcaption></figure>
+      <figure><img src="../img/bg-trailer.jpg" alt=""><figcaption>Taşıma</figcaption></figure>
+      </div>
+</section>
+
+<section class="cta" id="iletisim">
+  <div class="wrap">
+    <h2 class="up">Yer <i>ayırt.</i></h2>
+    <p class="up">Tekne boyunuzu ve marinanızı yazın; aynı gün fiyat ve teslim tarihiyle dönelim. Kış sezonu kapasitesi sınırlı.</p>
+    <a class="btn up" href="teklif.html"><span>Kışlama teklifi al →</span></a> &nbsp; <a class="btn up" style="background:#25d366" href="https://wa.me/905411610205?text=Merhaba%2C%20Boat%20Garage%20k%C4%B1%C5%9Flama%20i%C3%A7in%20bilgi%20almak%20istiyorum."><span>WhatsApp</span></a>
+    <div class="contact up">
+      <a href="tel:+905411610205">+90 541 161 02 05</a>
+      <a href="mailto:info@seaapplication.com">info@seaapplication.com</a>
+      <span>Alaçatı Mah. 18000/1 Sk. No:4, Çeşme / İzmir</span>
+    </div>
+  </div>
+</section>
+<footer class="wrap"><span>© 2026 Boat Garage · Reis Yatçılık kuruluşudur</span><a href="hizmetler.html">Hizmetler</a><a href="tesis.html">Tesis</a><a href="iletisim.html">İletişim</a><a class="sw" href="../clean/">Boat Clean →</a></footer>
+<a class="wa-fab" style="position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:26px" href="https://wa.me/905411610205?text=Merhaba%2C%20Boat%20Garage%20i%C3%A7in%20bilgi%20almak%20istiyorum." aria-label="WhatsApp">💬</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);if(location.search.includes("static"))gsap.globalTimeline.timeScale(80);
+const cur=document.querySelector('.cur'),cur2=document.querySelector('.cur2');
+window.addEventListener('mousemove',e=>{gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.08});gsap.to(cur2,{x:e.clientX,y:e.clientY,duration:.35})});
+document.querySelectorAll('a,.row').forEach(a=>{a.addEventListener('mouseenter',()=>cur2.style.width=cur2.style.height='70px');a.addEventListener('mouseleave',()=>cur2.style.width=cur2.style.height='44px')});
+gsap.timeline().from('[data-in-badge]',{scale:.6,opacity:0,duration:1,ease:'back.out(1.6)'},.1).from('[data-in]',{yPercent:110,duration:1.2,stagger:.12,ease:'power4.out'},.3).from('.hero .sub, nav',{opacity:0,y:20,duration:.9},1).from('.hero .fl',{opacity:0,y:60,duration:1.2,stagger:.15,ease:'power3.out'},.9);
+gsap.to('.hero .bg',{scale:1.15,yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+gsap.to('.hero .title',{yPercent:-25,opacity:0,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+document.querySelector('.hero').addEventListener('mousemove',e=>{const x=e.clientX/innerWidth-.5,y=e.clientY/innerHeight-.5;document.querySelectorAll('.hero .fl').forEach(f=>{const d=+f.dataset.depth;gsap.to(f,{x:x*d,y:y*d,duration:1.2,ease:'power2.out'})});gsap.to('.hero .bg',{x:x*-20,duration:1.5})});
+gsap.to('.ticker .in',{xPercent:-50,ease:'none',duration:22,repeat:-1});
+const mp=document.querySelector('[data-words]');mp.innerHTML=mp.textContent.split(' ').map(w=>`<span class="w">${w}</span>`).join(' ');
+gsap.to('.man .w',{color:'#0f2540',stagger:.06,ease:'none',scrollTrigger:{trigger:'.man',start:'top 70%',end:'bottom 70%',scrub:true}});
+gsap.utils.toArray('.up').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+document.querySelectorAll('[data-count]').forEach(el=>{const v=+el.dataset.count,o={n:0};gsap.to(o,{n:v,duration:2,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 85%'},onUpdate:()=>el.textContent=Math.round(o.n).toLocaleString('tr-TR')})});
+const cv=document.getElementById('drops'),cx=cv.getContext('2d');let drops=[];
+function size(){cv.width=innerWidth;cv.height=innerHeight}size();addEventListener('resize',size);
+let beamX=0,washing=false;
+(function loop(){cx.clearRect(0,0,cv.width,cv.height);if(washing){for(let i=0;i<14;i++)drops.push({x:beamX+(Math.random()-.5)*60,y:Math.random()*cv.height,vx:(Math.random()+.3)*6,vy:(Math.random()-.5)*3,l:1})}
+drops.forEach(d=>{d.x+=d.vx;d.y+=d.vy;d.l-=.03;cx.globalAlpha=Math.max(0,d.l);cx.fillStyle='#fff';cx.fillRect(d.x,d.y,2,6)});drops=drops.filter(d=>d.l>0);requestAnimationFrame(loop)})();
+const pctEl=document.getElementById('pct');
+gsap.timeline({scrollTrigger:{trigger:'.wash',start:'top top',end:'+=170%',pin:true,scrub:.5,onUpdate:s=>{pctEl.textContent=Math.round(s.progress*100);beamX=s.progress*innerWidth;washing=s.progress>0&&s.progress<1}}})
+ .fromTo('.wash .fresh',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',ease:'none'},0)
+ .fromTo('.wash .beam',{left:'0%'},{left:'100%',ease:'none'},0);
+document.querySelectorAll('.row').forEach(r=>{const pv=r.querySelector('.pv');r.addEventListener('mouseenter',()=>gsap.to(pv,{opacity:1,duration:.3}));r.addEventListener('mouseleave',()=>gsap.to(pv,{opacity:0,duration:.3}));r.addEventListener('mousemove',e=>gsap.to(pv,{left:e.clientX+160,top:e.clientY,duration:.5}))});
+const imgs=document.querySelectorAll('.seq .imgs div'),ts=document.querySelectorAll('.seq .t'),prog=document.getElementById('prog');
+const tl=gsap.timeline({scrollTrigger:{trigger:'.seq',start:'top top',end:'+=400%',pin:true,scrub:.6,onUpdate:s=>prog.style.width=s.progress*100+'%'}});
+imgs.forEach((im,i)=>{tl.to(im,{opacity:1,scale:1,duration:1},i).to(ts[i],{opacity:1,y:0,duration:.5},i+.1);if(i<imgs.length-1){tl.to(ts[i],{opacity:0,y:-30,duration:.4},i+.8).to(im,{opacity:0,duration:.6},i+1)}});
+/* Galeri: hem sayfa kaydırmasıyla ilerler hem parmakla/fareyle sürüklenir.
+   Dokunmatikte kendi kaydırması esas; kullanıcı elleyince otomatik ilerleme susar. */
+(function () {
+  var kutu = document.getElementById('galeri');
+  if (!kutu) return;
+  var gal = kutu.querySelector('.gal');
+  var elle = false, sayac;
+  function elleBasla() { elle = true; clearTimeout(sayac); sayac = setTimeout(function () { elle = false; }, 2200); }
+  ['pointerdown', 'touchstart', 'wheel'].forEach(function (t) {
+    kutu.addEventListener(t, elleBasla, { passive: true });
+  });
+  /* fareyle sürükleme (dokunmatikte tarayıcının kendi kaydırması zaten var) */
+  var ince = window.matchMedia('(pointer: fine)').matches, sur = false, x0 = 0, s0 = 0;
+  if (ince) {
+    kutu.style.cursor = 'grab';
+    kutu.addEventListener('pointerdown', function (e) {
+      sur = true; x0 = e.clientX; s0 = kutu.scrollLeft; kutu.style.cursor = 'grabbing';
+      try { kutu.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    kutu.addEventListener('pointermove', function (e) {
+      if (sur) { kutu.scrollLeft = s0 - (e.clientX - x0); e.preventDefault(); }
+    });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (t) {
+      kutu.addEventListener(t, function () { sur = false; kutu.style.cursor = 'grab'; });
+    });
+    kutu.querySelectorAll('img').forEach(function (i) { i.draggable = false; });
+  }
+  ScrollTrigger.create({
+    trigger: '#galeri', start: 'top bottom', end: 'bottom top', scrub: true,
+    onUpdate: function (s) {
+      if (elle || sur) return;
+      var en = gal.scrollWidth - kutu.clientWidth;
+      if (en > 0) kutu.scrollLeft = en * s.progress;
+    }
+  });
+})();
+</script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
