@@ -78,11 +78,12 @@
   // Yıkama: sabitlenir, kaydırdıkça kir gider
   document.querySelectorAll('.yikama').forEach(function (s) {
     var olcu = s.querySelector('.olcu span');
+    var et = [s.dataset.bas || 'Kışlama sonu', s.dataset.orta || 'Yıkanıyor', s.dataset.son || 'Teslime hazır'];
     gsap.fromTo(s, { '--w': '100%' }, {
       '--w': '0%', ease: 'none',
       scrollTrigger: {
         trigger: s, start: 'top top', end: '+=1600', pin: true, scrub: .5,
-        onUpdate: function (st) { if (olcu) olcu.textContent = st.progress < .05 ? 'Kışlama sonu' : st.progress > .95 ? 'Teslime hazır' : 'Yıkanıyor'; }
+        onUpdate: function (st) { if (olcu) olcu.textContent = st.progress < .05 ? et[0] : st.progress > .95 ? et[2] : et[1]; }
       }
     });
     gsap.from(s.querySelectorAll('.ui > div > *'), { y: 30, opacity: 0, duration: .9, ease: E, stagger: .1, scrollTrigger: { trigger: s, start: 'top 60%', once: true } });
